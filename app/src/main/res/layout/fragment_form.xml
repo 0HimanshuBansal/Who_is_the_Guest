@@ -5,10 +5,69 @@
     android:layout_height="match_parent"
     tools:context=".ui.form.FormFragment">
 
-    <TextView
-        android:id="@+id/form_text"
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/please_enter_your_details"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/form_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="@string/name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/form_phone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/form_address"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/form_host_address"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/host_address" />
+
+        <TextView
+            android:id="@+id/form_host_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/host_name" />
+
+        <TextView
+            android:id="@+id/form_vaccinated"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/are_you_vaccinated" />
+
+        <TextView
+            android:id="@+id/form_vehicle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/are_you_in_a_vehicle" />
+
+        <TextView
+            android:id="@+id/form_time_and_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_enter_time_of_visit" />
+    </LinearLayout>
 </FrameLayout>
